@@ -1,9 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 557,
-  "expoServerNgrokUrl": "https://mg-9bm.anonymous.shopapp3.exp.direct",
-  "packagerNgrokUrl": "https://packager.mg-9bm.anonymous.shopapp3.exp.direct",
-  "ngrokPid": 574
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "webpackServerPort": null
 }
