@@ -6,8 +6,7 @@ import {
   TouchableOpacity,
   Platform
 } from "react-native";
-import { red } from "color-name";
-// import { Ionicons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 
 const CartItem = (props) => {
   return (
@@ -17,18 +16,18 @@ const CartItem = (props) => {
         <Text style={styles.mainText}>{props.title}</Text>
       </View>
       <View style={styles.itemData}>
-        <Text style={styles.mainText}>${props.amount.toFixed(2)}</Text>
+        <Text style={styles.mainText}>${props.amount}</Text>
+        {/* <Text style={styles.mainText}>${props.amount.toFixed(2)}</Text> */}
         {props.deletable && (
           <TouchableOpacity
             onPress={props.onRemove}
             style={styles.deleteButton}
           >
-            {/* <Text style={styles.trash}>Trash</Text> */}
-            {/* <Ionicons
+            <Ionicons
               name={Platform.OS === "android" ? "md-trash" : "ios-trash"}
               size={23}
               color="red"
-            /> */}
+            />
           </TouchableOpacity>
         )}
       </View>
@@ -49,19 +48,16 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   quantity: {
-    // fontFamily: "open-sans",
+    fontFamily: "open-sans",
     color: "#888",
     fontSize: 16
   },
   mainText: {
-    // fontFamily: "open-sans-bold",
+    fontFamily: "open-sans-bold",
     fontSize: 16
   },
   deleteButton: {
     marginLeft: 20
-  },
-  trash: {
-    color: "#ff0000"
   }
 });
 
